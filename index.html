@@ -260,16 +260,11 @@
           <div class="bg-white text-dark p-4 rounded-4 shadow-lg mx-auto" style="max-width: 800px">
             <form class="row needs-validation" novalidate>
               <div class="col-12 row mb-3">
-                <div class="col-lg-6 col-12 position-relative">
+                <div class="col-lg-6 col-12 d-flex flex-column">
                   <label class="form-label">Location</label>
-                  <div class="position-relative">
-                    <i
-                      class="fa-solid fa-location-dot position-absolute top-50 start-0 translate-middle-y ms-3 text-secondary"></i>
-                    <input
-                      type="text"
-                      class="form-control ps-5"
-                      placeholder="Enter city, neighborhood, or ZIP code"
-                      required />
+                  <div class="position-relative flex-grow-1">
+                    <i class="fa-solid fa-location-dot position-absolute start-0 ms-3 text-secondary" style="top: 50%; transform: translateY(-50%);"></i>
+                    <input type="text" class="form-control ps-5 h-100" placeholder="Enter city, neighborhood, or ZIP code" required />
                     <div class="invalid-feedback">Please enter a location.</div>
                   </div>
                 </div>
