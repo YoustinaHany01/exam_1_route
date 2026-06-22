@@ -11,7 +11,7 @@
   --bs-primary-rgb: 129, 34, 254 !important;
 }
 body {
-  font-family: EXO, sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 .nav-link {
   position: relative;
@@ -32,7 +32,9 @@ body {
   transition: width 0.3s ease;
   border-radius: 2px;
 }
-
+.nav-link.dropdown-toggle::after {
+  border: none !important;
+}
 .nav-link:hover {
   color: #7b3fe4 !important;
 }
@@ -77,9 +79,11 @@ body {
   color: #6c2bff;
 }
 .section-title {
-  background: linear-gradient(to right, #6c2bff, #ff9800);
+  background: linear-gradient(90deg, #7c3aed, #a855f7, #f59e0b);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 .section-desc {
@@ -108,12 +112,10 @@ body {
 
 .custom-badge {
   position: absolute;
-  top: 18px;
-  left: 18px;
-
+  top: 16px;
+  left: 16px;
   padding: 8px 16px;
   border-radius: 30px;
-
   color: #fff;
   font-size: 14px;
   font-weight: 600;
@@ -134,12 +136,12 @@ body {
 /* Heart */
 
 .heart-btn {
-  top: 18px;
-  right: 18px;
-  width: 35px;
-  height: 45px;
+  top: 16px;
+  right: 16px;
+  width: 40px;
+  height: 40px;
   border: none;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.9);
 }
 .heart-btn i {
   transition: color 0.2s ease;
@@ -163,62 +165,78 @@ body {
 /* Schedule button */
 
 .schedule-btn {
-  background: #efe3ff;
-  color: #7b2cff;
+  background: #ede9fe;
+  color: #7c3aed;
   border: none;
   border-radius: 12px;
-  padding: 5px 10px;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
 }
 
 .schedule-btn:hover {
-  background: #7b2cff;
-  color: #fff;
+  background: #ddd6fe;
+  color: #7c3aed;
 }
 
 /* View button */
 
 .view-btn {
-  background: linear-gradient(to right, #6c2bff, #8b5cf6);
+  background: linear-gradient(90deg, #7c3aed, #a855f7);
   color: #fff;
-  padding: 15px 20px;
+  padding: 16px 32px;
   border: none;
-  border-radius: 1px;
-  font-size: 20px;
+  border-radius: 12px;
+  font-size: 18px;
   font-weight: 600;
+  transition: all 0.3s ease;
 }
 
 .view-btn:hover {
-  background: #6221dd;
+  background: linear-gradient(90deg, #5b21b6, #7e22ce);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(124, 58, 237, 0.35);
 }
 .badge-premium {
-  border: 1px solid #8b5cf6;
-  color: #8b5cf6;
-  background-color: #faf5ff;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 1.25rem;
+  border: 2px solid rgba(124, 58, 237, 0.2);
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(124, 58, 237, 0.08), rgba(168, 85, 247, 0.08));
+  color: #7c3aed;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .divider-line-l {
   display: inline-block;
-  width: 80px;
-  height: 3px;
-  background: linear-gradient(to right, transparent, #8b5cf6);
+  width: 64px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #7c3aed);
 }
 .divider-line-r {
   display: inline-block;
-  width: 80px;
-  height: 3px;
-  background: linear-gradient(to left, transparent, #8b5cf6);
+  width: 64px;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #7c3aed);
 }
 .divider-line-l-yellow {
   display: inline-block;
-  width: 80px;
-  height: 3px;
-  background: linear-gradient(to right, transparent, #f1b622);
+  width: 64px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #f1b622);
 }
 .divider-line-r-yellow {
   display: inline-block;
-  width: 80px;
-  height: 3px;
-  background: linear-gradient(to left, transparent, #f1b622);
+  width: 64px;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #f1b622);
 }
 .icon{
   width: 30px;

@@ -38,7 +38,7 @@
 }
 .bg-gradient-violet-hero {
   background-image: linear-gradient(to right, rgba(77, 23, 154, 0.85), rgba(89, 22, 139, 0.85)),
-                    url('https://storage.googleapis.com/uxpilot-auth.appspot.com/4a713135fa-60a8ac99fc66b07ce395.png');
+                    url('../Images/hero-bg-img.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -97,13 +97,13 @@
 
 /* Buttons ---------------------------------------------------------- */
 .btn-gradient-violet {
-  background: linear-gradient(90deg, var(--eh-violet), var(--eh-purple));
+  background: linear-gradient(135deg, var(--eh-violet), var(--eh-purple));
   color: #fff;
   border: none;
   transition: all 0.3s ease;
 }
 .btn-gradient-violet:hover {
-  background: linear-gradient(90deg, var(--eh-violet-dark), #7e22ce);
+  background: linear-gradient(135deg, var(--eh-violet-dark), #7e22ce);
   color: #fff;
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(124, 58, 237, 0.35);
@@ -526,7 +526,7 @@
   transition: all 0.3s ease;
 }
 .social-btn:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background: #9b30ff;
   transform: scale(1.1) translateY(-2px);
   color: #fff;
 }
@@ -621,6 +621,7 @@ footer::before {
 
 /* Utility colors --------------------------------------------------- */
 .text-violet { color: var(--eh-violet) !important; }
+.text-violet-200 { color: #ddd6fe !important; }
 .text-purple { color: var(--eh-purple) !important; }
 .text-amber { color: var(--eh-amber) !important; }
 .text-pink { color: var(--eh-pink) !important; }
@@ -648,6 +649,18 @@ footer::before {
 .z-2 { z-index: 2 !important; }
 .inset-0 { top: 0; right: 0; bottom: 0; left: 0; }
 .pt-header { padding-top: 6rem !important; }
+
+/* Section spacing — py-6 matches reference py-20 (5rem) ------------ */
+.py-6 {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
+.pt-6 {
+  padding-top: 5rem !important;
+}
+.pb-6 {
+  padding-bottom: 5rem !important;
+}
 
 /* Responsive helpers ----------------------------------------------- */
 @media (max-width: 767.98px) {
